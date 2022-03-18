@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>HTML form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="display:flex; justify-content:center;">
+
+
+    <div class="form">
+
+        <h2 class="head"> Form using HTML </h2>
+
+        <form action="get">
+            <div class="D-flex">
+                <div class="form-item">
+                    First Name <br>
+                    <input type="text" name="Fname" placeholder="enter First name" required>
+                </div>
+                <div class="form-item">
+                    Last Name <br>
+                    <input type="text" name="Lname" placeholder="enter Last name">
+                </div>
+            </div><br>
+
+            <div class="D-flex ">
+                <div class="form-item">
+                    Birth Date <br>
+                    <input type="date" value="Bday">
+                </div>
+                <div class="form-item">
+                    Gender <br>
+                    <input type="radio" name="Gender" value="Female"> Female
+                    <input type="radio" name="Gender" value="Male"> Male
+                    <input type="radio" name="Gender" value="Other"> Other
+                </div>
+
+            </div>
+
+            <div class="D-flex">
+                <div class="form-item">
+                    Email ID <br>
+                    <input type="email" name="email" placeholder="enter Email ID" required>
+
+                </div>
+                <div class="form-item">
+                    Enter password<br>
+                    <input type="password" name="pwd" required>
+                </div>
+            </div>
+            <div class="D-flex ">
+                <div class="form-item">
+                    Mobile No.<br>
+                    <input type="number" required>
+                </div>
+                <div class="form-item">
+                    Select your city<br>
+                    <select name="city" id="city">
+                        <option value="blank"></option>
+                        <option value="other">other</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Banglore">Banglore</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="D-flex">
+                <div class="form-item">
+                    Languages <br>
+                    <div>
+                        <input type="checkbox" name="Marathi" value="Marathi"> Marathi
+
+                        <input type="checkbox" name="Hindi" value="Hindi"> Hindi
+
+                        <input type="checkbox" name="English" value="English"> English
+
+                    </div>
+                </div>
+
+                <div class="form-item"> Enter Engineering Stream <br>
+                    <input list="branch" name="branch">
+                    <datalist id="branch">
+                        <option value="Computer engineering"></option>
+                        <option value="E&TC engineering"></option>
+                        <option value="Civil engineering"></option>
+                        <option value="Chemical engineering"></option>
+                        <option value="Electrical engineering"></option>
+                    </datalist>
+                </div>
+            </div>
+            <div class="D-flex">
+                <div class="form-item">
+                    Upload resume <br>
+                    <input type="file" name="resume" required>
+
+                </div>
+                <div class=" form-item">
+                    Additional information <br><br>
+                    <textarea name="info" id="" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="D-btn">
+                <input  class="btn" type="submit" name="submit" value="Submit"> &emsp;&emsp;&emsp;&emsp;
+                <input class="btn"  type="reset" name="reset" value="Reset">
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
